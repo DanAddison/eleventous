@@ -2,11 +2,6 @@
 // SCSS VARIABLES
 //--------------------
 
-// Grid breakpoints
-//
-// Define the minimum and maximum dimensions at which your layout will change,
-// adapting to different screen sizes, for use in media queries.
-
 $breakpoints: (
     md: 670px,
     lg: 940px,
@@ -31,22 +26,27 @@ $text-color: $color-white;
 
 // Typography
 //
-// Font, line-height, and color for body text, headings, and more.
-$font-family-sans-serif: 'Poppins', 'Roboto', 'Helvetica Neue',
-    sans-serif;
-$font-family-serif: Georgia, Times, serif;
-$font-family-monospace: Menlo, Monaco, Consolas, 'Andale Mono', 'Courier New',
-    monospace;
-$font-family-base: $font-family-sans-serif;
+// Font families
 
-$font-size-root: 100%;
-$font-size-base: 1rem;
-$line-height: 1.625;
+// @font-face {
+//     font-family: 'Noe Display';
+//     font-style: normal;
+//     font-display: swap;
+//     font-weight: 400;
+//     src: local('Noe Display'), local('NoeDisplay-Regular'),
+//         url('/assets/fonts/noe-display-regular.woff2') format('woff2'),
+//         url('/assets/fonts/noe-display-regular.woff') format('woff');
+// }
+
+$font-family-sans-serif: 'Poppins', 'Roboto', 'Helvetica Neue', sans-serif;
+$font-family-serif: Georgia, Times, serif;
+$font-family-monospace: Menlo, Monaco, Consolas, monospace;
+
+
 
 // Animation
 //
 // Default easing curves, Transitions, etc
-
 $animation-curve-fast-out-slow-in: cubic-bezier(0.4, 0, 0.2, 1);
 $animation-curve-linear-out-slow-in: cubic-bezier(0, 0, 0.2, 1);
 $animation-curve-fast-out-linear-in: cubic-bezier(0.4, 0, 1, 1);
@@ -55,7 +55,6 @@ $animation-curve-default: $animation-curve-fast-out-slow-in;
 // Misc Shared
 //
 // common shared styles
-
 $spacing: 2rem;
 
 $box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);

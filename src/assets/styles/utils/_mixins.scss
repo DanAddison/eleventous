@@ -24,13 +24,6 @@
     }
 }
 
-@mixin hover-focus {
-    &:hover,
-    &:focus {
-        @content;
-    }
-}
-
 @mixin sr-only {
     position: absolute;
     width: 1px;
@@ -60,6 +53,17 @@
     hyphens: auto;
 }
 
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin center-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @mixin coverall() {
     position: absolute;
     top: 0;
@@ -79,3 +83,54 @@
     background-color: transparent;
     -webkit-appearance: none;
 }
+
+
+/*********************************************************
+## CSS Grid auto layout with Flexbox fallback for IE
+*********************************************************/
+// You can generate similar code with this handy tool https://shadeed.github.io/grid-to-flex/
+@mixin gridAuto() {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1em;
+
+  // target all direct children (grid items)
+  > * {
+    margin-bottom: 1em;
+    margin-left: 1em;
+  }
+
+  @media (min-width: 600px) {
+    > * {
+      width: calc((99% / #{2}) - 1em);
+      flex: 0 0 calc((99% / #{2}) - 1em);
+    }
+  }
+
+  @media (min-width: 900px) {
+    > * {
+      width: calc((99% / #{3}) - 1em);
+      flex: 0 0 calc((99% / #{3}) - 1em);
+    }
+  }
+
+  // Override or undo all the flexbox stuff.
+  // *note that IE does support some of CSS Grid but doesn't support the @supports function,
+  // so this does what we need!
+  @supports (display: grid) {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-left: 0;
+
+    > * {
+      width: auto;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+// Now just add this mixin to your container element for the grid:
+// .wrapper {
+//   @include gridAuto();
+// }
