@@ -17,6 +17,8 @@ body {
     }
 
     .main {
+        padding-top: $spacing;
+        padding-bottom: $spacing;
         display: flex;
         flex-direction: column;
         flex: 1 0 auto;

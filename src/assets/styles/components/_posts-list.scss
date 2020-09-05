@@ -1,0 +1,10 @@
+.posts-list {
+
+  &__item {
+    margin-bottom: $spacing;
+
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+}
