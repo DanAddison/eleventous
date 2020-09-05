@@ -4,8 +4,8 @@
 
 .menuicon {
     display: block;
-    width: 18px;
-    height: 16px;
+    width: 1.5rem;
+    height: 1rem;
     position: relative;
     transform: rotate(0deg);
     transition: transform 0.3s $animation-curve-default;
@@ -19,7 +19,7 @@
         right: 0;
         height: 2px;
         width: 100%;
-        background-color: currentColor;
+        background-color: $color-white;
         transform: rotate(0deg);
         transition: transform 0.25s ease-in-out;
 

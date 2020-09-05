@@ -2,7 +2,7 @@
 
 A simple Eleventy Starter Kit, my base for all new 11ty projects.
 
-I've simply added a little bit more flesh on the bones of ([Eleventastic](https://github.com/maxboeck/eleventastic)) by Max Boeck.
+I've simply added a little bit more flesh on the bones of [Eleventastic](https://github.com/maxboeck/eleventastic) by Max Boeck.
 
 ## Features
 
