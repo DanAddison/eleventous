@@ -1,3 +1,9 @@
+<div align="center">
+  <a href="">
+    <img alt="" src="src/assets/images/Eleventous-screenshot.jpg" width="800" />
+  </a>
+</div>
+
 # Eleventous
 
 A simple Eleventy Starter Kit, my base for all new 11ty projects.
@@ -6,12 +12,12 @@ I've simply added a little bit more flesh on the bones of [Eleventastic](https:/
 
 ## Features
 
-* CSS Pipeline (Sass, CleanCSS)
-* JS Bundling (Webpack)
-* SVG Icon Sprite Generation
-* Critical CSS
-* HTML Minification
-* No external builds, everything runs through 11ty
+-   CSS Pipeline (Sass, CleanCSS)
+-   JS Bundling (Webpack)
+-   SVG Icon Sprite Generation
+-   Critical CSS
+-   HTML Minification
+-   No external builds, everything runs through 11ty
 
 ## Getting Started
 
@@ -23,8 +29,8 @@ npm install
 
 ### Commands
 
-* Run `npm start` for a development server and live reloading
-* Run `npm run build` to generate a production build
+-   Run `npm start` for a development server and live reloading
+-   Run `npm run build` to generate a production build
 
 ## CSS
 
@@ -52,6 +58,6 @@ I've just added a little more flesh on its bones (mostly just content) to make t
 
 Max in turn credits the following for influencing Eleventastic:
 
-* Phil Hawksworth: [EleventyOne](https://github.com/philhawksworth/eleventyone)
-* Mike Riethmuller: [Supermaya](https://github.com/MadeByMike/supermaya)
-* Zach Leatherman: [zachleat.com](https://github.com/zachleat/zachleat.com)
+-   Phil Hawksworth: [EleventyOne](https://github.com/philhawksworth/eleventyone)
+-   Mike Riethmuller: [Supermaya](https://github.com/MadeByMike/supermaya)
+-   Zach Leatherman: [zachleat.com](https://github.com/zachleat/zachleat.com)
