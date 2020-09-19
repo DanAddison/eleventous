@@ -48,9 +48,9 @@ h2 {
     font-weight: 700;
 }
 
-// p {
-//     margin: 0;
-// }
+p {
+    max-width: 80ch; // restrict width to 80 characters everywhere for readability
+}
 
 a {
   color: $color-white;
