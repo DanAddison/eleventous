@@ -1,4 +1,5 @@
 <ul class="posts-list">
+{# posts with favourite:true in front matter #}
 {%- for post in collections.posts | favorites -%}
     <li class="posts-list__item">
             <time datetime="{{ post.date | dateToISO }}">Posted: {{ post.date | dateToFormat('DD') }}</time>
